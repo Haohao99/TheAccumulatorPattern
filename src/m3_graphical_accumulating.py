@@ -9,7 +9,7 @@ Additionally, it emphasizes that you must
 before you can implement a solution to the problem in Python.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Hao Hu.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -95,6 +95,18 @@ def draw_parallel_lines(n, point, length, window):
       :type length: int
       :type window: rg.RoseWindow
     """
+    start_point = point
+    end_point = rg.Point(point.x+length,point.y)
+    for k in range(n+1):
+        Line = rg.Line(start_point,end_point)
+        Line.attach_to(window)
+        window.render()
+        start_point.y = start_point.y + 30
+        end_point = rg.Point(point.x+length,point.y)
+
+
+
+
     # ------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
