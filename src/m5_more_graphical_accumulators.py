@@ -27,8 +27,8 @@ import rosegraphics as rg
 # ----------------------------------------------------------------------
 def main():
     """ Calls the   TEST   functions in this module. """
-    #run_test_draw_squares_from_circle()
-    #run_test_draw_circles_from_rectangle()
+    run_test_draw_squares_from_circle()
+    run_test_draw_circles_from_rectangle()
     run_test_draw_lines_from_rectangles()
 
 
@@ -359,11 +359,11 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    # ###################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
+    # ###################################################################
     # ------------------------------------------------------------------
 
 
